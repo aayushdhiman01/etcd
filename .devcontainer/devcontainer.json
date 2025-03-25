@@ -3,7 +3,11 @@
 {
 	"name": "Go",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+<<<<<<< HEAD
 	"image": "mcr.microsoft.com/devcontainers/go:1.24-bullseye",
+=======
+	"image": "mcr.microsoft.com/devcontainers/go:dev-1.24-bookworm",
+>>>>>>> 040e5ed65c6139072b268b791f4d4291a578f254
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	"features": {
 		"ghcr.io/devcontainers/features/docker-in-docker:2": {},

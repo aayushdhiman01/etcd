@@ -1,6 +1,8 @@
+REPOSITORY_ROOT := $(shell git rev-parse --show-toplevel)
+
 .PHONY: all
 all: build
-include tests/robustness/makefile.mk
+include $(REPOSITORY_ROOT)/tests/robustness/Makefile
 
 .PHONY: build
 build:
@@ -218,3 +220,7 @@ verify-go-versions:
 .PHONY: sync-toolchain-directive
 sync-toolchain-directive:
 	./scripts/sync_go_toolchain_directive.sh
+
+.PHONY: markdown-diff-lint
+markdown-diff-lint:
+	./scripts/markdown_diff_lint.sh
