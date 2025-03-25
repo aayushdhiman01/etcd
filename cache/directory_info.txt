@@ -1,0 +1,10 @@
+etcd/
+├── cache/  <-- New Watch Cache Proxy Package
+│   ├── cache.go        # Core caching logic
+│   ├── event_cache.go  # Stores recent watch events
+│   ├── kv_cache.go     # Stores latest key-value states
+│   ├── proxy.go        # Handles etcd watch requests
+│   ├── api.go          # Exposes gRPC API
+│   ├── client/         # Client library (go.etcd.io/cache/client)
+│   │   ├── client.go   # API client for cache interactions
+│   ├── main.go         # Entry point (for testing)
